@@ -35,6 +35,9 @@ export function run(input) {
     } else if (line.quantity >= 10) {
       discountValue = 2.5;
       minimumQuantity = 10;
+    } else if (line.quantity >= 5) {
+      discountValue = 1.5;
+      minimumQuantity = 5;
     }
 
     if (discountValue > 0) {
