@@ -33,7 +33,7 @@ export function run(input) {
       discountValue = 5;
       minimumQuantity = 25;
     } else if (line.quantity >= 10) {
-      discountValue = 25;
+      discountValue = 2.5;
       minimumQuantity = 10;
     }
 
