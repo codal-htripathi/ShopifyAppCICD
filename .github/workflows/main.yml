@@ -19,9 +19,8 @@ jobs:
         run: npm install -g @shopify/cli@latest
       - name: Deploy
         env:
-          # Token from the Partner Dashboard
           SHOPIFY_CLI_PARTNERS_TOKEN: ${{ secrets.SHOPIFY_CLI_PARTNERS_TOKEN }}
-          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
-          # .env content after a deploy
           SHOPIFY_API_KEY: ${{ secrets.SHOPIFY_API_KEY }}
+          SHOPIFY_API_SECRET: ${{ secrets.SHOPIFY_API_SECRET }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
         run: shopify app deploy -f --source-control-url "$COMMIT_URL"
