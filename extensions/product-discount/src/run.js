@@ -52,7 +52,7 @@ export function run(input) {
             value: discountValue,
           },
         },
-        message: `${discountValue}% off off off when buying at least ${minimumQuantity} items`,
+        message: `${discountValue}% off when buying at least ${minimumQuantity} items`,
       });
     }
   });
