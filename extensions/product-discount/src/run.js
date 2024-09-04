@@ -38,7 +38,7 @@ export function run(input) {
             value: discountValue,
           },
         },
-        message: `${discountValue}% OFF WHEN BUYING AT LEAST ${minimumQuantity}`,
+        message: `${discountValue}% OFF BUYING AT LEAST ${minimumQuantity}`,
       });
     }
   });
