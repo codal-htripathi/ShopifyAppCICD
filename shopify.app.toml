@@ -1,29 +1,5 @@
-# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
-
-client_id = "9c9245aabc1b6ddefa7f7ed62525d142"
 name = "truecable-discountApp"
-handle = "truecable-discountapp"
-application_url = "https://thongs-failures-delight-musician.trycloudflare.com"
-embedded = true
-
-[build]
-automatically_update_urls_on_dev = true
-dev_store_url = "truecable-function.myshopify.com"
-include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_delivery_customizations,write_discounts,write_products"
-
-[auth]
-redirect_urls = [
-  "https://thongs-failures-delight-musician.trycloudflare.com/auth/callback",
-  "https://thongs-failures-delight-musician.trycloudflare.com/auth/shopify/callback",
-  "https://thongs-failures-delight-musician.trycloudflare.com/api/auth/callback"
-]
-
-[webhooks]
-api_version = "2024-07"
-
-[pos]
-embedded = false
