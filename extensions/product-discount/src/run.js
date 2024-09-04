@@ -57,7 +57,7 @@ export function run(input) {
     }
   });
 
-  if (discounts.length === 0) {
+  if (discounts.length === 0 || gift_card.length > 0) {
     console.error("No cart lines qualify for volume discount.");
     return EMPTY_DISCOUNT;
   }
